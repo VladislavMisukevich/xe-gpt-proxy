@@ -1,5 +1,6 @@
-fastapi
-uvicorn
-openai
-flask
+Django>=4.2
 gunicorn
+openai
+python-dotenv
+requests
+Pillow
