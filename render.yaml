@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: xe-gpt-proxy
+    name: xe-diary
     env: python
-    plan: free
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn config.wsgi:application
