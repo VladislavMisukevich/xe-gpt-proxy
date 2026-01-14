@@ -3,4 +3,4 @@ services:
     name: xe-diary
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn config.wsgi:application
+    startCommand: gunicorn xe_site.wsgi:application
